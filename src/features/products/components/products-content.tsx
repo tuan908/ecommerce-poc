@@ -235,7 +235,7 @@ export default function ProductListPage() {
               {/* Results Summary */}
               <div className="flex items-center justify-between text-sm text-gray-600">
                 <span>{isLoading ? "Loading..." : `${filteredProducts.length} products found`}</span>
-                {filters.search && <span>Search results for "{filters.search}"</span>}
+                {filters.search && <span>Search results for &quot;{filters.search}&quot;</span>}
               </div>
             </div>
 

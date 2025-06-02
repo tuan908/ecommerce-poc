@@ -1,5 +1,5 @@
-import {createSlice} from "@reduxjs/toolkit";
-import {Product} from "./types";
+import { createSlice } from "@reduxjs/toolkit";
+import { Product } from "../products/types";
 
 export const cartSlice = createSlice({
 	name: "CART",
@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
 			if (existingItem) {
 				const updatedItems = state.items.map(item =>
 					item.id === action.payload.id
-						? {...item, quantity: item.quantity! + 1}
+						? {...item, quantity: item.inventory! + 1}
 						: item,
 				);
 				return {
@@ -44,15 +44,15 @@ export const cartSlice = createSlice({
 				...state,
 				items: state.items.filter(item => item.id !== action.payload),
 				total:
-					state.total - Number(itemToRemove.price) * itemToRemove.quantity!,
-				itemCount: state.itemCount - itemToRemove.quantity!,
+					state.total - Number(itemToRemove.price) * itemToRemove.inventory!,
+				itemCount: state.itemCount - itemToRemove.inventory!,
 			};
 		},
 		updateQuantity: (state, action) => {
 			const item = state.items.find(item => item.id === action.payload.id);
 			if (!item) return state;
 
-			const quantityDiff = action.payload.quantity - item.quantity!;
+			const quantityDiff = action.payload.quantity - item.inventory!;
 			const updatedItems = state.items.map(item =>
 				item.id === action.payload.id
 					? {...item, quantity: action.payload.quantity}

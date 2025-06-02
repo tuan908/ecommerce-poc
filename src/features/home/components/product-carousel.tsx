@@ -40,7 +40,7 @@ const useScreenSize = () => {
 export default function ProductCarousel() {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-	const {isMobile, isTablet, isDesktop} = useScreenSize();
+	const {isMobile, isTablet} = useScreenSize();
 	const {products} = useGetProducts();
 
 	const itemsPerView = {
