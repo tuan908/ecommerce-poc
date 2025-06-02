@@ -1,0 +1,191 @@
+{
+	"common": {
+		"loading": "Đang tải...",
+		"error": "Đã xảy ra lỗi",
+		"success": "Thành công",
+		"cancel": "Hủy",
+		"save": "Lưu",
+		"delete": "Xóa",
+		"edit": "Chỉnh sửa",
+		"add": "Thêm mới",
+		"search": "Tìm kiếm",
+		"confirm": "Xác nhận",
+		"close": "Đóng",
+		"appName": "Gia Hưng Food",
+		"welcome": "Món ngon xứ nẫu"
+	},
+	"navigation": {
+		"home": "Trang chủ",
+		"products": "Sản phẩm",
+		"orders": "Đơn hàng",
+		"customers": "Khách hàng",
+		"settings": "Cài đặt",
+		"profile": "Hồ sơ",
+		"logout": "Đăng xuất",
+		"login": "Đăng nhập",
+		"register": "Đăng ký",
+		"dashboard": "Bảng điều khiển",
+		"about": "Giới thiệu",
+		"contact": "Liên hệ",
+		"privacyPolicy": "Chính sách bảo mật",
+		"termsOfService": "Điều khoản dịch vụ",
+		"language": "Ngôn ngữ",
+		"theme": "Chủ đề",
+		"darkMode": "Chế độ tối",
+		"lightMode": "Chế độ sáng",
+		"notifications": "Thông báo",
+		"help": "Trợ giúp",
+		"faq": "Câu hỏi thường gặp",
+		"support": "Hỗ trợ",
+		"feedback": "Phản hồi",
+		"adminPanel": "Bảng quản trị",
+		"manageProducts": "Quản lý sản phẩm",
+		"manageOrders": "Quản lý đơn hàng",
+		"manageCustomers": "Quản lý khách hàng",
+		"manageSettings": "Quản lý cài đặt",
+		"viewProfile": "Xem hồ sơ",
+		"editProfile": "Chỉnh sửa hồ sơ",
+		"changePassword": "Đổi mật khẩu",
+		"resetPassword": "Đặt lại mật khẩu",
+		"forgotPassword": "Quên mật khẩu",
+		"verifyEmail": "Xác minh email",
+		"resendVerification": "Gửi lại xác minh",
+		"accountSettings": "Cài đặt tài khoản",
+		"privacySettings": "Cài đặt quyền riêng tư",
+		"notificationSettings": "Cài đặt thông báo",
+		"languageSettings": "Cài đặt ngôn ngữ",
+		"themeSettings": "Cài đặt chủ đề",
+		"securitySettings": "Cài đặt bảo mật",
+		"billing": "Thanh toán",
+		"subscriptions": "Đăng ký",
+		"invoices": "Hóa đơn",
+		"reports": "Báo cáo",
+		"analytics": "Phân tích",
+		"sales": "Doanh thu",
+		"customersSupport": "Hỗ trợ khách hàng",
+		"userManagement": "Quản lý người dùng",
+		"roleManagement": "Quản lý vai trò",
+		"accessControl": "Kiểm soát truy cập",
+		"auditLogs": "Nhật ký kiểm tra",
+		"systemSettings": "Cài đặt hệ thống",
+		"backup": "Sao lưu",
+		"restore": "Khôi phục",
+		"maintenance": "Bảo trì",
+		"documentation": "Tài liệu",
+		"apiDocumentation": "Tài liệu API",
+		"changeLog": "Nhật ký thay đổi",
+		"version": "Phiên bản",
+		"contactUs": "Liên hệ với chúng tôi",
+		"followUs": "Theo dõi chúng tôi",
+		"socialMedia": "Mạng xã hội",
+		"termsAndConditions": "Điều khoản và điều kiện",
+		"cookiePolicy": "Chính sách cookie",
+		"dataProtection": "Bảo vệ dữ liệu",
+		"userGuide": "Hướng dẫn sử dụng",
+		"gettingStarted": "Bắt đầu",
+		"troubleshooting": "Khắc phục sự cố",
+		"features": "Tính năng",
+		"testimonials": "Khách hàng nói gì?",
+		"warranty": "Bảo hành",
+		"returnPolicy": "Chính sách đổi trả",
+		"shippingInfo": "Thông tin vận chuyển",
+		"paymentMethods": "Phương thức thanh toán",
+		"orderTracking": "Theo dõi đơn hàng",
+		"wishlist": "Danh sách yêu thích",
+		"cart": "Giỏ hàng",
+		"checkout": "Thanh toán",
+		"orderHistory": "Lịch sử đơn hàng",
+		"productDetails": "Chi tiết sản phẩm",
+		"productReviews": "Đánh giá sản phẩm",
+		"productCategories": "Danh mục sản phẩm",
+		"productSearch": "Tìm kiếm sản phẩm",
+		"productFilters": "Bộ lọc sản phẩm",
+		"productSort": "Sắp xếp sản phẩm",
+		"productComparison": "So sánh sản phẩm",
+		"productRecommendations": "Gợi ý sản phẩm",
+		"productTags": "Thẻ sản phẩm",
+		"productAttributes": "Thuộc tính sản phẩm",
+		"productVariants": "Biến thể sản phẩm",
+		"productImages": "Hình ảnh sản phẩm",
+		"productVideos": "Video sản phẩm"
+	},
+	"home": {
+		"heroTitle": "Tinh Hoa Ẩm Thực Miền Trung",
+		"heroHighlight": "Đặc Sản Bình Định Chính Gốc",
+		"heroDescription": "Mang hương vị quê nhà đến từng bữa ăn. Đặc sản Bình Định được tuyển chọn kỹ lưỡng, giữ trọn vị truyền thống và chất lượng tuyệt hảo.",
+		"heroImageAlt": "Đặc sản Bình Định",
+		"heroPrimaryButtonText": "Khám Phá Ngay",
+		"heroSecondaryButtonText": "Demo Sản Phẩm",
+
+		"featuresTitle": "Tại sao chọn chúng tôi?",
+		"featuresDescription": "Chúng tôi cam kết mang đến những sản phẩm đặc sản Bình Định chất lượng nhất, với dịch vụ tận tâm và giao hàng nhanh chóng.",
+		"features": [
+			{
+				"title": "100% Chính Gốc Bình Định",
+				"description": "Tất cả sản phẩm đều được sản xuất tại Bình Định, đảm bảo nguồn gốc rõ ràng và hương vị truyền thống."
+			},
+			{
+				"title": "Đóng Gói Chuẩn Vệ Sinh",
+				"description": "Sản phẩm được đóng gói kỹ lưỡng, hợp vệ sinh, đảm bảo an toàn thực phẩm và giữ được độ tươi ngon."
+			},
+			{
+				"title": "Giao Hàng Toàn Quốc",
+				"description": "Chỉ từ 2-4 ngày là bạn đã có thể thưởng thức đặc sản Bình Định tại nhà, bất kể bạn ở đâu."
+			},
+			{
+				"title": "Hỗ Trợ Nhiệt Tình",
+				"description": "Đội ngũ CSKH sẵn sàng tư vấn, giải đáp thắc mắc về sản phẩm và đơn hàng mọi lúc, mọi nơi."
+			}
+		],
+
+		"featureProductsTitle": "Sản phẩm nổi bật",
+		"featureProductsDescription": "Khám phá những sản phẩm đặc sắc nhất của chúng tôi, được chọn lọc kỹ lưỡng từ các làng nghề truyền thống Bình Định.",
+
+		"testimonialsTitle": "Khách hàng nói gì?",
+		"testimonialsDescription": "Chúng tôi tự hào khi nhận được những phản hồi tích cực từ khách hàng. Dưới đây là một số lời chứng thực từ những người đã trải nghiệm sản phẩm của chúng tôi.",
+		"testimonials": [
+			{
+				"name": "Nguyễn Thị Hoa",
+				"quote": "Tôi đã thử nem chợ Huyện và tré — ngon chuẩn vị quê nhà, rất đáng tiền!",
+				"rating": 5
+			},
+			{
+				"name": "Phạm Văn Tùng",
+				"quote": "Quà biếu Tết từ shop được đóng gói đẹp, ai nhận cũng khen. Sẽ ủng hộ dài dài.",
+				"rating": 5
+			},
+			{
+				"name": "Lê Thanh Hòa",
+				"quote": "Bánh ít lá gai mềm, ngọt vừa, chuẩn Bình Định luôn. Giao hàng cũng rất nhanh.",
+				"rating": 4.5
+			}
+		],
+
+		"ctaTitle": "Thưởng Thức Đặc Sản Bình Định Ngay Hôm Nay",
+		"ctaDescription": "Đừng bỏ lỡ cơ hội mang hương vị miền Trung về nhà. Đặt hàng ngay để trải nghiệm tinh túy ẩm thực Bình Định.",
+		"ctaButtons": [
+			{
+				"text": "Xem Sản Phẩm",
+				"variant": "secondary"
+			},
+			{
+				"text": "Liên Hệ Ngay",
+				"variant": "outline"
+			}
+		],
+
+		"footerLinks": {
+			"Công ty": ["Giới thiệu", "Liên hệ", "Tuyển dụng"],
+			"Hỗ trợ": ["Câu hỏi thường gặp", "Chính sách vận chuyển", "CS đổi trả"],
+			"Pháp lý": ["Chính sách bảo mật", "Điều khoản dịch vụ"],
+			"Mạng xã hội": ["Facebook", "Zalo", "YouTube"]
+		},
+		"viewProducts": "Xem sản phẩm"
+	},
+	"order": {
+		"addToCart": "Thêm vào giỏ hàng",
+		"viewCart": "Xem giỏ hàng",
+		"checkout": "Thanh toán",
+		"orderNow": "Đặt hàng ngay"
+	}
+}
