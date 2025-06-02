@@ -1,8 +1,6 @@
 "use client";
 
 import Hero from "@/features/home/components/hero-section";
-import Footer from "@/shared/components/layout/footer";
-import Header from "@/shared/components/layout/header";
 import json from "@/shared/i18n/locales/vi.json";
 import { useRouter } from "next/navigation";
 import { memo, startTransition } from "react";
@@ -32,8 +30,6 @@ const HomeContent = memo(() => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <main>
         <Hero
           title={json.home.heroTitle}
@@ -65,8 +61,6 @@ const HomeContent = memo(() => {
           buttons={ctaButtons}
         />
       </main>
-
-      <Footer />
     </div>
   );
 });
