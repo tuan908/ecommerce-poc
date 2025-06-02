@@ -16,11 +16,6 @@ const HomeContent = memo(() => {
 		console.log("Browse products clicked");
 	};
 
-	const handleWatchDemo = () => {
-		// Open demo modal or navigate to demo page
-		console.log("Watch demo clicked");
-	};
-
 	const ctaButtons = [
 		{
 			text: json.home.viewProducts,

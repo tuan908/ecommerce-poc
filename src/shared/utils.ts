@@ -1,4 +1,4 @@
-export function formatCurrency(amount: string, decimals = 2) {
+export function formatCurrency(amount: string, decimals = 0) {
 	const amountInNumber = Number(amount);
 
 	if (typeof amountInNumber !== "number" || isNaN(amountInNumber)) {
@@ -6,7 +6,7 @@ export function formatCurrency(amount: string, decimals = 2) {
 	}
 
 	return new Intl.NumberFormat("en-US", {
-		minimumFractionDigits: 0,
+		minimumFractionDigits: decimals,
 		maximumFractionDigits: 2,
 	}).format(amountInNumber);
 }

@@ -91,7 +91,9 @@ export default function ProductCarousel() {
 		);
 	};
 
-	const addToCart = (product: Product) => {};
+	const addToCart = (product: Product) => {
+		console.log(`Adding ${product.name} to cart`);
+	};
 
 	// Auto-play functionality
 	useEffect(() => {
