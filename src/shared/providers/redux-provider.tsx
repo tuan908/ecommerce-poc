@@ -4,7 +4,7 @@
 import {useRef} from "react";
 import {Provider} from "react-redux";
 import {PersistGate} from "redux-persist/integration/react";
-import {makePersistor, makeStore} from "./store";
+import {makePersistor, makeStore} from "../state/store";
 
 export default function ReduxProvider({
 	children,

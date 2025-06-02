@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { Product } from "./types";
+import {createSlice} from "@reduxjs/toolkit";
+import {Product} from "./types";
 
 export const cartSlice = createSlice({
 	name: "CART",
@@ -43,7 +43,8 @@ export const cartSlice = createSlice({
 			return {
 				...state,
 				items: state.items.filter(item => item.id !== action.payload),
-				total: state.total - Number(itemToRemove.price) * itemToRemove.quantity!,
+				total:
+					state.total - Number(itemToRemove.price) * itemToRemove.quantity!,
 				itemCount: state.itemCount - itemToRemove.quantity!,
 			};
 		},

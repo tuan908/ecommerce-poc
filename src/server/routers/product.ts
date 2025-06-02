@@ -1,7 +1,14 @@
-import {Hono} from "hono";
+import { db, Product } from "@/lib/db";
+import { nullsToUndefined } from "@/shared/utils";
+import { Hono } from "hono";
+import { createSuccessResponse } from "../utils";
 
-const app = new Hono().get("/", async c => {
-	return c.json({message: "Welcome to the Product API"});
+const productRouter = new Hono().get("/", async c => {
+	const products = await db.select().from(Product);
+	return c.json(
+		createSuccessResponse(nullsToUndefined(products.map(x => ({...x, description: x.description ?? ""})))),
+		200,
+	);
 });
 
-export default app;
+export default productRouter;
