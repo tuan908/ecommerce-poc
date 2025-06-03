@@ -1,5 +1,5 @@
-import { honoClient } from "@/lib/hono-client";
-import { useQuery } from "@tanstack/react-query";
+import {honoClient} from "@/lib/hono-client";
+import {useQuery} from "@tanstack/react-query";
 
 export function useGetProducts() {
 	const {data: products, isLoading} = useQuery({
@@ -7,7 +7,7 @@ export function useGetProducts() {
 		queryFn: async () => {
 			const response = await honoClient.products.$get();
 			const responseJson = await response.json();
-			return responseJson?.data ?? []
+			return responseJson?.data ?? [];
 		},
 	});
 

@@ -1,7 +1,6 @@
-
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
-import { RecursivelyReplaceNullWithUndefined } from "./types";
+import {clsx, type ClassValue} from "clsx";
+import {twMerge} from "tailwind-merge";
+import {RecursivelyReplaceNullWithUndefined} from "./types";
 
 export function formatCurrency(amount: string, decimals = 0) {
 	const amountInNumber = Number(amount);
@@ -16,17 +15,19 @@ export function formatCurrency(amount: string, decimals = 0) {
 	}).format(amountInNumber);
 }
 
-
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
 }
 
-export function debounce<T extends (...args: any[]) => any>(func: T, wait: number): (...args: Parameters<T>) => void {
-  let timeout: NodeJS.Timeout
-  return (...args: Parameters<T>) => {
-    clearTimeout(timeout)
-    timeout = setTimeout(() => func(...args), wait)
-  }
+export function debounce<T extends (...args: any[]) => any>(
+	func: T,
+	wait: number,
+): (...args: Parameters<T>) => void {
+	let timeout: NodeJS.Timeout;
+	return (...args: Parameters<T>) => {
+		clearTimeout(timeout);
+		timeout = setTimeout(() => func(...args), wait);
+	};
 }
 
 export function nullsToUndefined<T>(

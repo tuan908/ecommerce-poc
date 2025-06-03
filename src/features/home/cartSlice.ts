@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { Product } from "../products/types";
+import {createSlice} from "@reduxjs/toolkit";
+import {Product} from "../products/types";
 
 export const cartSlice = createSlice({
 	name: "CART",

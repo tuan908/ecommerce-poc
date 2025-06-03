@@ -70,7 +70,7 @@ export function getFieldError(
 	error: ApiResponse,
 	field: string,
 ): string | undefined {
-	return error.error?.errors?.find((err) => err.field === field)?.message;
+	return error.error?.errors?.find(err => err.field === field)?.message;
 }
 
 export function getFieldErrors(error: ApiResponse): Record<string, string> {
@@ -92,7 +92,7 @@ export function getFieldErrors(error: ApiResponse): Record<string, string> {
  */
 export function isSuccessResponse<TData>(
 	response: ApiResponse<TData>,
-): response is ApiResponse<TData> & { data: TData } {
+): response is ApiResponse<TData> & {data: TData} {
 	return response.success === true && response.data !== undefined;
 }
 
