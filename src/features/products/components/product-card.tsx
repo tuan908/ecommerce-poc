@@ -1,9 +1,14 @@
 "use client";
 
-import {Badge} from "@/components/ui/badge";
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardFooter, CardHeader} from "@/components/ui/card";
-import {formatCurrency} from "@/shared/utils";
+import {Badge} from "@/shared/components/ui/badge";
+import {Button} from "@/shared/components/ui/button";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+} from "@/shared/components/ui/card";
+import {formatCurrency} from "@/shared/utils/currency";
 import {Eye, Heart, ShoppingCart, Star} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

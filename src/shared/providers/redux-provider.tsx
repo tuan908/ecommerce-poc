@@ -4,7 +4,8 @@
 import {useRef} from "react";
 import {Provider} from "react-redux";
 import {PersistGate} from "redux-persist/integration/react";
-import {makePersistor, makeStore} from "../state/store";
+import {LoadingAnimation} from "../components/layout/loading-animations";
+import {makePersistor, makeStore} from "../store";
 
 export default function ReduxProvider({
 	children,
@@ -22,7 +23,7 @@ export default function ReduxProvider({
 	return (
 		<Provider store={storeRef.current}>
 			<PersistGate
-				loading={<div>Loading...</div>}
+				loading={<LoadingAnimation variant="cooking" />}
 				persistor={persistorRef.current!}
 			>
 				{children}

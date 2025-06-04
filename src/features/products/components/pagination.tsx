@@ -1,13 +1,13 @@
 "use client";
 
-import {Button} from "@/components/ui/button";
+import {Button} from "@/shared/components/ui/button";
 import {
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
 	SelectValue,
-} from "@/components/ui/select";
+} from "@/shared/components/ui/select";
 import {ChevronLeft, ChevronRight, MoreHorizontal} from "lucide-react";
 import type {PaginationState} from "../types";
 

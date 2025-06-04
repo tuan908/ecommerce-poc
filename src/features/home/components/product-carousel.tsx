@@ -1,11 +1,16 @@
 "use client";
 
-import {Badge} from "@/components/ui/badge";
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardFooter, CardHeader} from "@/components/ui/card";
 import {Product} from "@/features/products/types";
+import {Badge} from "@/shared/components/ui/badge";
+import {Button} from "@/shared/components/ui/button";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+} from "@/shared/components/ui/card";
 import json from "@/shared/i18n/locales/vi.json";
-import {formatCurrency} from "@/shared/utils";
+import {formatCurrency} from "@/shared/utils/currency";
 import {AnimatePresence, motion, PanInfo} from "framer-motion";
 import {ChevronLeft, ChevronRight, ShoppingCart, Star} from "lucide-react";
 import Image from "next/image";

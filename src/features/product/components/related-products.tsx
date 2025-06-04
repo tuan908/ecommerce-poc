@@ -1,9 +1,9 @@
 "use client";
 
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardFooter} from "@/components/ui/card";
 import {Product} from "@/features/products/types";
-import {formatCurrency} from "@/shared/utils";
+import {Button} from "@/shared/components/ui/button";
+import {Card, CardContent, CardFooter} from "@/shared/components/ui/card";
+import {formatCurrency} from "@/shared/utils/currency";
 import {ShoppingCart, Star} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

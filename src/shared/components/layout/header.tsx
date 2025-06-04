@@ -1,9 +1,10 @@
 "use client";
 
-import {Button} from "@/components/ui/button";
 import CartIcon from "@/shared/components/layout/cart-icon";
-import {Menu} from "lucide-react";
-import {memo} from "react";
+import { Button } from "@/shared/components/ui/button";
+import { Menu } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { memo, startTransition } from "react";
 import Logo from "./logo";
 import Navigation from "./navigation";
 
@@ -12,6 +13,15 @@ interface HeaderProps {
 }
 
 const Header = memo(({className = ""}: HeaderProps) => {
+	const router = useRouter();
+
+	const checkout = () => {
+		startTransition(() => {
+			router.prefetch("/cart");
+		});
+		router.push("/cart");
+	};
+
 	return (
 		<header
 			className={`sticky top-0 z-50 bg-[#1f5d59]/95 backdrop-blur supports-[backdrop-filter]:bg-[#1f5d59]/90 border-b ${className}`}
@@ -23,7 +33,9 @@ const Header = memo(({className = ""}: HeaderProps) => {
 
 					<div className="flex items-center space-x-4">
 						<CartIcon />
-						<Button className="hidden sm:inline-flex">Mua ngay</Button>
+						<Button className="hidden sm:inline-flex" onClick={checkout}>
+							Mua ngay
+						</Button>
 						<Button variant="ghost" size="icon" className="md:hidden">
 							<Menu className="h-5 w-5" />
 						</Button>

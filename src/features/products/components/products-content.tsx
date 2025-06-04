@@ -1,5 +1,7 @@
 "use client";
 
+import {useGetProducts} from "@/features/home/hooks";
+import {LoadingAnimation} from "@/shared/components/layout/loading-animations";
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -7,9 +9,8 @@ import {
 	BreadcrumbList,
 	BreadcrumbPage,
 	BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import {Button} from "@/components/ui/button";
-import {useGetProducts} from "@/features/home/hooks";
+} from "@/shared/components/ui/breadcrumb";
+import {Button} from "@/shared/components/ui/button";
 import {Grid, List} from "lucide-react";
 import {useEffect, useState} from "react";
 import type {FilterState, PaginationState, Product} from "../types";
@@ -245,9 +246,11 @@ export default function ProductListPage() {
 							{/* Results Summary */}
 							<div className="flex items-center justify-between text-sm text-gray-600">
 								<span>
-									{isLoading
-										? "Loading..."
-										: `${filteredProducts.length} products found`}
+									{isLoading ? (
+										<LoadingAnimation />
+									) : (
+										`${filteredProducts.length} products found`
+									)}
 								</span>
 								{filters.search && (
 									<span>Search results for &quot;{filters.search}&quot;</span>

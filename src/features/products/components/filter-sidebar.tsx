@@ -1,12 +1,17 @@
 "use client";
 
-import {Badge} from "@/components/ui/badge";
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {Checkbox} from "@/components/ui/checkbox";
-import {Input} from "@/components/ui/input";
-import {Label} from "@/components/ui/label";
-import {Slider} from "@/components/ui/slider";
+import {Badge} from "@/shared/components/ui/badge";
+import {Button} from "@/shared/components/ui/button";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/shared/components/ui/card";
+import {Checkbox} from "@/shared/components/ui/checkbox";
+import {Input} from "@/shared/components/ui/input";
+import {Label} from "@/shared/components/ui/label";
+import {Slider} from "@/shared/components/ui/slider";
 import {Filter, X} from "lucide-react";
 import {useState} from "react";
 import type {FilterState} from "../types";

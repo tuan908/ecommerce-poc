@@ -2,7 +2,7 @@
 
 import type React from "react";
 
-import {Button} from "@/components/ui/button";
+import {Button} from "@/shared/components/ui/button";
 import {ChevronLeft, ChevronRight, Expand, Heart, Share2} from "lucide-react";
 import Image from "next/image";
 import {useState} from "react";

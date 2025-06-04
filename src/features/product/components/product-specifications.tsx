@@ -1,6 +1,11 @@
 "use client";
 
-import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/shared/components/ui/card";
 
 interface Specification {
 	label: string;

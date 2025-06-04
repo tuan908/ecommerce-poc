@@ -1,9 +1,13 @@
 "use client";
 
-import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardHeader} from "@/components/ui/card";
-import {Progress} from "@/components/ui/progress";
+import {
+	Avatar,
+	AvatarFallback,
+	AvatarImage,
+} from "@/shared/components/ui/avatar";
+import {Button} from "@/shared/components/ui/button";
+import {Card, CardContent, CardHeader} from "@/shared/components/ui/card";
+import {Progress} from "@/shared/components/ui/progress";
 import {MoreHorizontal, Star, ThumbsDown, ThumbsUp} from "lucide-react";
 import {useState} from "react";
 

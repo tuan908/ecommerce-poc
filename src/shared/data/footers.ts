@@ -1,14 +1,14 @@
 import json from "@/shared/i18n/locales/vi.json";
-import {FooterSection} from "../types";
+import { FooterSection } from "../types";
 
 export const footerSections: FooterSection[] = [
 	{
 		title: "Quick Links",
 		links: [
-			{href: "#", label: json.navigation.about},
-			{href: "#", label: json.navigation.faq},
-			{href: "#", label: json.navigation.privacyPolicy},
-			{href: "#", label: json.navigation.termsOfService},
+			{href: "/about", label: json.navigation.about},
+			{href: "/faq", label: json.navigation.faq},
+			{href: "/privacy-policy", label: json.navigation.privacyPolicy},
+			{href: "/terms-of-service", label: json.navigation.termsOfService},
 		],
 	},
 	{
@@ -23,10 +23,10 @@ export const footerSections: FooterSection[] = [
 	{
 		title: json.navigation.support,
 		links: [
-			{href: "#", label: json.navigation.contact},
-			{href: "#", label: json.navigation.shippingInfo},
-			{href: "#", label: json.navigation.returnPolicy},
-			{href: "#", label: json.navigation.warranty},
+			{href: "/contact", label: json.navigation.contact},
+			{href: "/shipping-info", label: json.navigation.shippingInfo},
+			{href: "/return-policy", label: json.navigation.returnPolicy},
+			{href: "/warranty", label: json.navigation.warranty},
 		],
 	},
 ];
