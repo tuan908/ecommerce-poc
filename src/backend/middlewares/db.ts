@@ -3,7 +3,7 @@ import {drizzle} from "drizzle-orm/neon-serverless";
 import type {PgTransaction} from "drizzle-orm/pg-core";
 import type {MiddlewareHandler} from "hono";
 import {ContentfulStatusCode} from "hono/utils/http-status";
-import {DbSchema} from "../database/schema";
+import * as DbSchema from "../config/database/schema";
 import {DatabaseError, TransactionError} from "../errors/database-error";
 import type {
 	DatabaseConfig,

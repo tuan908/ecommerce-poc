@@ -2,9 +2,9 @@
 
 import type React from "react";
 
-import {Button} from "@/shared/components/ui/button";
-import {Card, CardContent} from "@/shared/components/ui/card";
-import {Input} from "@/shared/components/ui/input";
+import {Button} from "@/components/ui/button";
+import {Card, CardContent} from "@/components/ui/card";
+import {Input} from "@/components/ui/input";
 import {
 	ArrowLeft,
 	ChefHat,

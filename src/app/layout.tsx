@@ -1,7 +1,11 @@
-import Footer from "@/shared/components/layout/footer";
-import Header from "@/shared/components/layout/header";
-import ReactQueryProvider from "@/shared/providers/reactquery-provider";
-import ReduxProvider from "@/shared/providers/redux-provider";
+import {BrandingModal} from "@/components/admin/components/modals/branding-modal";
+import {ContactModal} from "@/components/admin/components/modals/contact-modal";
+import {SocialModal} from "@/components/admin/components/modals/social-modal";
+import {ThemeModal} from "@/components/admin/components/modals/theme-modal";
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+import ReactQueryProvider from "@/providers/reactquery-provider";
+import ReduxProvider from "@/providers/redux-provider";
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
@@ -35,6 +39,10 @@ export default function RootLayout({
 					<ReactQueryProvider>
 						<Header />
 						{children}
+						<BrandingModal />
+						<ContactModal />
+						<SocialModal />
+						<ThemeModal />
 						<Footer />
 					</ReactQueryProvider>
 				</ReduxProvider>

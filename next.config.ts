@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "scontent.fsgn19-1.fna.fbcdn.net",
       },
+      {
+        hostname: "pbs.twimg.com"
+      }
     ],
   },
 };

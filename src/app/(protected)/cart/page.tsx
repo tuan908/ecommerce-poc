@@ -1,10 +1,14 @@
 "use client";
 
-import {CheckoutForm} from "@/features/cart/components/checkout-form";
-import {CheckoutProgress} from "@/features/cart/components/checkout-progress";
-import {OrderSummary} from "@/features/cart/components/order-summary";
-import {TrustBadges} from "@/features/cart/components/trust-badges";
-import type {CartItem, CheckoutData, CheckoutStep} from "@/features/cart/types";
+import {CheckoutForm} from "@/components/cart/components/checkout-form";
+import {CheckoutProgress} from "@/components/cart/components/checkout-progress";
+import {OrderSummary} from "@/components/cart/components/order-summary";
+import {TrustBadges} from "@/components/cart/components/trust-badges";
+import type {
+	CartItem,
+	CheckoutData,
+	CheckoutStep,
+} from "@/components/cart/types";
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -12,7 +16,7 @@ import {
 	BreadcrumbList,
 	BreadcrumbPage,
 	BreadcrumbSeparator,
-} from "@/shared/components/ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
 import {useState} from "react";
 
 // Sample cart items - in production, this would come from cart state/context

@@ -1,11 +1,11 @@
 "use client";
 
-import {ProductImageGallery} from "@/features/product/components/product-image-gallery";
-import {ProductReviews} from "@/features/product/components/product-reviews";
-import {ProductSpecifications} from "@/features/product/components/product-specifications";
-import {RelatedProducts} from "@/features/product/components/related-products";
-import {Product} from "@/features/products/types";
-import {Badge} from "@/shared/components/ui/badge";
+import {ProductImageGallery} from "@/components/product/components/product-image-gallery";
+import {ProductReviews} from "@/components/product/components/product-reviews";
+import {ProductSpecifications} from "@/components/product/components/product-specifications";
+import {RelatedProducts} from "@/components/product/components/related-products";
+import {Product} from "@/components/products/types";
+import {Badge} from "@/components/ui/badge";
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -13,17 +13,12 @@ import {
 	BreadcrumbList,
 	BreadcrumbPage,
 	BreadcrumbSeparator,
-} from "@/shared/components/ui/breadcrumb";
-import {Button} from "@/shared/components/ui/button";
-import {Card, CardContent} from "@/shared/components/ui/card";
-import {Separator} from "@/shared/components/ui/separator";
-import {
-	Tabs,
-	TabsContent,
-	TabsList,
-	TabsTrigger,
-} from "@/shared/components/ui/tabs";
-import {formatCurrency} from "@/shared/utils/currency";
+} from "@/components/ui/breadcrumb";
+import {Button} from "@/components/ui/button";
+import {Card, CardContent} from "@/components/ui/card";
+import {Separator} from "@/components/ui/separator";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
+import {formatCurrency} from "@/lib/utils/currency";
 import {
 	Clock,
 	Heart,

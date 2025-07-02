@@ -1,7 +1,10 @@
 import {Hono} from "hono";
 import {logger} from "hono/logger";
+import cartController from "./controllers/cart.controller";
+import inventoryController from "./controllers/inventory.controller";
+import pageSettingController from "./controllers/page-settings.controller";
+import productController from "./controllers/product.controller";
 import {MiddlewareFactory} from "./middlewares";
-import {Routes} from "./routers";
 import type {Session} from "./types/session";
 
 // Extend Hono Context types
@@ -43,9 +46,10 @@ app.use("/api/v1/cart/*", async (c, next) => {
 });
 
 const routes = app
-	.route("/v1/product", Routes.V1.Product)
-	.route("/v1/inventory", Routes.V1.Inventory)
-	.route("/v1/cart", Routes.V1.Cart);
+	.route("/v1/product", productController)
+	.route("/v1/inventory", inventoryController)
+	.route("/v1/cart", cartController)
+	.route("/v1/page-settings", pageSettingController);
 
 export default app;
 
