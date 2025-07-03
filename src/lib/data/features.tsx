@@ -1,5 +1,5 @@
+import {type Feature} from "@/types";
 import {Award, Headphones, RotateCcw, Truck} from "lucide-react";
-import {Feature} from "../types";
 
 export const features: Feature[] = [
 	{

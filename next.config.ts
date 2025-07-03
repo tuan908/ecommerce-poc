@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
     optimizeServerReact: true,
     parallelServerCompiles: true,
     typedEnv: true,
-    useEarlyImport: true,
     authInterrupts: true,
     inlineCss: true,
     middlewarePrefetch: "flexible",
@@ -15,6 +14,7 @@ const nextConfig: NextConfig = {
     appNavFailHandling: true,
     appDocumentPreloading: true,
     optimisticClientCache: true,
+    ppr: true,
   },
   images: {
     remotePatterns: [

@@ -1,4 +1,4 @@
-import type { AdminSettings, EditingField, EditingMode } from "@/types/admin";
+import type {AdminSettings, EditingField, EditingMode} from "@/types/admin";
 import {
 	createSelector,
 	createSlice,

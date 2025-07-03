@@ -6,7 +6,7 @@ import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardFooter, CardHeader} from "@/components/ui/card";
 import json from "@/i18n/locales/vi.json";
 import {formatCurrency} from "@/lib/utils/currency";
-import {AnimatePresence, motion, PanInfo} from "framer-motion";
+import {AnimatePresence, motion, PanInfo, Variants} from "framer-motion";
 import {ChevronLeft, ChevronRight, ShoppingCart, Star} from "lucide-react";
 import Image from "next/image";
 import {useEffect, useState} from "react";
@@ -98,7 +98,7 @@ export default function ProductCarousel() {
 		setTimeout(() => setIsAutoPlaying(true), 1000);
 	};
 
-	const containerVariants = {
+	const containerVariants: Variants = {
 		animate: {
 			x: `-${currentIndex * 100}%`,
 			transition: {

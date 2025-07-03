@@ -1,6 +1,6 @@
+import {env} from "@/env";
 import {jwtVerify} from "jose";
-import {env} from "../../../env.mjs";
-import {Session} from "../types/session";
+import type {Session} from "../types/session";
 
 export async function decrypt(input: string) {
 	try {

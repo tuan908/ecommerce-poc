@@ -1,14 +1,14 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Separator } from "@/components/ui/separator";
-import { useGetPageSettings } from "@/lib/hooks/useGetPageSettings";
-import { cn } from "@/lib/utils/styles";
-import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { setEditing, syncFromDb, togglePreview } from "@/store/slices/adminSlice";
-import { EditingMode } from "@/types/admin";
+import {Badge} from "@/components/ui/badge";
+import {Button} from "@/components/ui/button";
+import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover";
+import {Separator} from "@/components/ui/separator";
+import {useGetPageSettings} from "@/lib/hooks/useGetPageSettings";
+import {cn} from "@/lib/utils/styles";
+import {useAppDispatch, useAppSelector} from "@/store/hooks";
+import {setEditing, syncFromDb, togglePreview} from "@/store/slices/adminSlice";
+import {type EditingMode} from "@/types/admin";
 import {
 	ChevronRight,
 	Eye,
@@ -20,7 +20,7 @@ import {
 	Share2,
 	Sparkles,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
 const menuSections = [
 	{

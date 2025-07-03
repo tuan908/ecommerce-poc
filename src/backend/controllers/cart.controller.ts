@@ -1,10 +1,10 @@
 // api/cart/routes.ts
 import {client} from "@/backend/client";
-import {CartItem} from "@/store/types/cart";
+import {env} from "@/env";
+import {type CartItem} from "@/store/types/cart";
 import {Redis} from "@upstash/redis";
 import {Hono} from "hono";
 import {z} from "zod";
-import {env} from "../../../env.mjs";
 import {REDIS_UTILS} from "../config/redis";
 import CART_VALIDATION_SCHEMA from "../lib/validations/cart";
 
